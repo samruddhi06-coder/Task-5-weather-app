@@ -1,0 +1,170 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #4facfe, #00c6fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+    background: white;
+    width: 380px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h1 {
+    color: #0d47a1;
+    margin-bottom: 25px;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Input Field */
+.search-box input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #4facfe;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Search Button */
+.search-box button {
+    padding: 12px 18px;
+    background: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: #005fd1;
+}
+
+/* Location Button */
+.location-btn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.location-btn:hover {
+    background: #1f8a37;
+}
+
+/* Weather Card */
+.weather-card {
+    margin-top: 30px;
+}
+
+/* City Name */
+#cityName {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Weather Icon */
+.weather-icon {
+    font-size: 70px;
+    color: orange;
+    margin: 20px 0;
+}
+
+/* Temperature */
+#temperature {
+    font-size: 50px;
+    color: #0077ff;
+}
+
+/* Weather Description */
+#description {
+    font-size: 20px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Weather Details */
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* Detail Box */
+.detail-box {
+    width: 45%;
+    background: #f4f7fb;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.detail-box i {
+    font-size: 28px;
+    color: #0077ff;
+    margin-bottom: 10px;
+}
+
+.detail-box p {
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.detail-box span {
+    font-weight: bold;
+    color: #222;
+}
+
+/* Responsive Design */
+@media (max-width: 450px) {
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+    .details {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .detail-box {
+        width: 100%;
+    }
+
+}
